@@ -1,0 +1,3 @@
+[coreapi.codecs]
+html = html_codec:HTMLCodec
+

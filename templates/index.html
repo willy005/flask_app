@@ -1,7 +1,24 @@
 <html>
         <title>Index page</title>
 <body>
-    <h1>CRUD WEBS</h1>
-    <h2></h2>
+    <h1>CRUD WEBSITE</h1>
+{#carry brackets are used#}
+{#    <h2>#}
+{#        {% for fruit in fruits %}#}
+{#            <p> {{ fruit }} </p>#}
+{#        {% endfor %}#}
+{#    </h2>#}
+
+{#Use {{  }} when displaying a variable.#}
+{#Use {% opening %} and {% closing %} when adding a python logic#}
+
+{% if fruits %}
+    {% for fruit in fruits %}
+        <li>{{ fruit }}</li>
+    {% endfor %}
+
+    {% else %}
+        <h2>There are no fruits</h2>
+{% endif %}
 </body>
 </html>
